@@ -58,6 +58,6 @@ it schedule to work every minute = 60 seconds
 
 ![](images/004.PNG)
 
-## As wc -l counts only new lines, line count is 999
+## As wc -l counts only new lines, so it shows only 999 but 1000 in fact
 
 ![](images/005.PNG)
