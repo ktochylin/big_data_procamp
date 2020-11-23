@@ -44,20 +44,20 @@ it schedule to work every minute = 60 seconds
 
 ## NiFi workflow
 
-![](images/001.png)
+![](images/001.PNG)
 
 ## Controller Services
 
-![](images/002.png)
+![](images/002.PNG)
 
 ## Master /home/nifi/yyyy-MM-dd-HH-mm
 
-![](images/003.png)
+![](images/003.PNG)
 
 ## File inside
 
-![](images/004.png)
+![](images/004.PNG)
 
 ## As wc -l counts only new lines, line count is 999
 
-![](images/005.png)
+![](images/005.PNG)
