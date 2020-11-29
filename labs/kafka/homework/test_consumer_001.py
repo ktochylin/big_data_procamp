@@ -33,13 +33,13 @@ try:
 			for i in range(0, 10):
 				print(transaction_list[i]["id"], transaction_list[i]["price"])
 			print("\n\n\n")
-			c.commit()
+			c.commit(asynchronous=False)
 			transaction_list = []
-except Exception as ex:
-	print("Something happened", ex)
 except KeyboardInterrupt:
 	print("Press Ctrl-C to terminate while statement")
 	pass
+except Exception as ex:
+	print("Something happened", ex)
 finally:
 	# Close down consumer to commit final offsets.
 	c.close()
