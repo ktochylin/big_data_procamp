@@ -1,10 +1,6 @@
 from confluent_kafka import Consumer
 import json
 from time import sleep
-import sys
-
-for i in sys.argv:
-	print("Name of the script      : {sys.argv[i]}".format(sys.argv[i]))
 
 conf = {'bootstrap.servers': 'localhost:9092',
 		'group.id': 'mygroup',
@@ -13,7 +9,7 @@ conf = {'bootstrap.servers': 'localhost:9092',
 		'enable.auto.commit': 'false'}
 		
 consumer = Consumer(conf)
-
+# Set of params could be passed as console arguments, please change if need
 topics = ["bitstamp.transaction.btcusd"]
 top_x_count = 10
 top_batch_count = 100
