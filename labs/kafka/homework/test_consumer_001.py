@@ -27,7 +27,7 @@ def consume_loop(consumer, topics, commit_count):
 				continue
 			else:
 				data = json.loads(msg.value().decode('utf-8'))["data"]
-				if data != {}:
+				if data != {} & data["order_type"] == 1:
 					transaction_list.append(data)
 					msgno += 1
 					
