@@ -4,7 +4,7 @@ from time import sleep
 import sys
 
 for i in sys.argv:
-	print(f"Name of the script      : {sys.argv[0]}")
+	print(f"Name of the script      : {sys.argv[i]}")
 
 conf = {'bootstrap.servers': 'localhost:9092',
 		'group.id': 'mygroup',
@@ -35,7 +35,6 @@ def consume_loop(consumer, topics, top_x, commit_count):
 				data = json.loads(msg.value().decode('utf-8'))["data"]
 				# Collect messages
 				if (data != {}) & (data["order_type"] == 1):
-					print(type(data), data["order_type"], type(data["order_type"]))
 					transaction_list.append(data)
 					msgno += 1
 				# Do batch
