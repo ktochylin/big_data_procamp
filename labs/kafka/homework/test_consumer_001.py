@@ -4,7 +4,7 @@ from time import sleep
 import sys
 
 for i in sys.argv:
-	print(f"Name of the script      : {sys.argv[0]=}")
+	print(f"Name of the script      : {sys.argv[0]}")
 
 conf = {'bootstrap.servers': 'localhost:9092',
 		'group.id': 'mygroup',
