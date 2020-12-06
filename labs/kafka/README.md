@@ -30,6 +30,8 @@ CurrencyPair | btcusd
 ![](images/001.PNG)
 
 ## Kafka part
+
+### kafka application should be interrupt by Ctrl + C command
 ### below instructions I run on master node form logged in user folder
 
 ```
