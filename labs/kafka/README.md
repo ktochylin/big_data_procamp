@@ -26,7 +26,7 @@ CurrencyPair | btcusd
 ### After deployment run this process
 
 ### NiFi workflow
-![](images/001.png)
+![](images/001.PNG)
 
 ## Kafka part
 ## below instructions I run on master node form logged in user folder
@@ -61,7 +61,7 @@ source venv/bin/activate
 pip install confluent-kafka
 
 # Go to application folder
-cd ~/big_data_procamp/labs/kafka/homework
+cd labs/kafka/homework
 
 # Run application
 python show_top10_transactions_for_sale.py
