@@ -30,6 +30,7 @@ CurrencyPair | btcusd
 ![](images/001.PNG)
 
 ## Kafka part
+
 ### below instructions I run on master node form logged in user folder
 
 ```
@@ -67,6 +68,8 @@ cd labs/kafka/homework
 
 # Run application
 python show_top10_transactions_for_sale.py
+
+# Run should be cancelled by Ctrl + C
 
 ```
 
