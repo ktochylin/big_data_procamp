@@ -8,6 +8,7 @@
 
 
 ### Deploy NiFi ingestion process manually
+### and start workflow before run Kafka application
 
 \big_data_procamp\labs\kafka\homework\nifi\bitstamp_kafka_publisher.xml
 
@@ -61,6 +62,7 @@ source venv/bin/activate
 pip install confluent-kafka
 
 # Go to application folder
+# cd ~/big_data_procamp/labs/kafka/homework/
 cd labs/kafka/homework
 
 # Run application
