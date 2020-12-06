@@ -30,7 +30,7 @@ CurrencyPair | btcusd
 ![](images/001.PNG)
 
 ## Kafka part
-## below instructions I run on master node form logged in user folder
+### below instructions I run on master node form logged in user folder
 
 ```
 # Create Kafka Topic
@@ -69,3 +69,6 @@ cd labs/kafka/homework
 python show_top10_transactions_for_sale.py
 
 ```
+
+### Kafka application output
+![](images/002.PNG)
