@@ -5,7 +5,7 @@ from time import sleep
 conf = {'bootstrap.servers': 'localhost:9092',
 		'group.id': 'mygroup',
 		#'auto.offset.reset': 'latest',
-		'default.topic.config': {'auto.offset.reset': 'latest'},
+		'default.topic.config': {'auto.offset.reset': 'earliest'},
 		'enable.auto.commit': 'false'}
 		
 consumer = Consumer(conf)
