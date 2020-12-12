@@ -19,17 +19,14 @@ cd ~/flight_delays
 
 # show file structure
 head airlines.csv
-head airports.csv
 head flights.csv
 
 # create HDFS directories for files
 hdfs dfs -mkdir -p /data/flight_delays/airlines
-hdfs dfs -mkdir -p /data/flight_delays/airports
 hdfs dfs -mkdir -p /data/flight_delays/flights
 
 # copy from local to HDFS
 hdfs dfs -copyFromLocal airlines.csv /data/flight_delays/airlines/airlines.csv
-hdfs dfs -copyFromLocal airports.csv /data/flight_delays/airports/airports.csv
 hdfs dfs -copyFromLocal flights.csv /data/flight_delays/flights/flights.csv
 
 # verify data is in there
