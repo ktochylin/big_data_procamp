@@ -125,6 +125,7 @@ select iata_code, airline_name, avg_departure_delay
 
 ![](images/result.PNG)
 
+
 ## Tests (Basic)
 
 ### compare count of records in files with hive tables
