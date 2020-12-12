@@ -124,3 +124,42 @@ select iata_code, airline_name, avg_departure_delay
 ### Result
 
 ![](images/result.PNG)
+
+
+## Tests (Basic)
+
+### compare count of records in files with hive tables
+### it could be implemented as script using for instance
+### bash + hive CLI or java Cucumber framework or som other autotest framewors
+### remember that file contain Header record
+
+![](images/002.PNG)
+
+### for dictionary table airlines we can check if there any duplicates
+### on join field iata_code, group by count should be equal to overall count
+### and nuber of records in a file minus header record
+
+### I use sum instead of count cause sometime statiscic is different from real
+
+select sum(1) as sum_group_by
+  from (select iata_code
+          from airlines
+         group by iata_code)a;
+
+![](images/003.PNG)
+
+select sum(1) as sum_simple
+  from airlines al;
+
+![](images/004.PNG)
+
+select sum(1) as sum_simple
+  from flights;
+  
+![](images/005.PNG)
+
+### so fligts file record count 5 819 080 - 1 = 5 819 079 
+### is the same as table record count
+
+### airlines file record count 15 - 1 = 14
+### is the same as table record count and group by count
