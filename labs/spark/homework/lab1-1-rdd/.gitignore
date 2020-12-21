@@ -1,0 +1,16 @@
+target/
+lib_managed/
+src_managed/
+project/boot/
+tmp/
+
+.idea
+.bsp
+*.iml
+
+*.swp
+
+# vscode
+.bloop/
+.metals
+project/metals.sbt
