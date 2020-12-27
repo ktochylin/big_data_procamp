@@ -9,6 +9,8 @@
 
 ### Transcript
 
+ > GLC: Great job!
+
 ```
 # copy from backet to master node
 gsutil cp gs://hive_laba-1/globallogic-procamp-bigdata-datasets/2015_Flight_Delays_and_Cancellations/archive.zip .
@@ -133,6 +135,9 @@ select iata_code, airline_name, avg_departure_delay
 ### bash + hive CLI or java Cucumber framework or som other autotest framewors
 ### remember that file contain Header record
 
+ > GLC: Yeah, good solution
+ > I'd go with python and pandas
+
 ![](images/002.PNG)
 
 ### for dictionary table airlines we can check if there any duplicates
@@ -157,6 +162,10 @@ select sum(1) as sum_simple
   from flights;
   
 ![](images/005.PNG)
+
+ > GLC: Interesting point, but using `sum` instead of `count` can bring up some level of inconsistency between tests and business results
+ > unless you switch off using statistics in all your queries which just slows down performance of their invocation
+ > in most of the cases
 
 ### so fligts file record count 5 819 080 - 1 = 5 819 079 
 ### is the same as table record count
